@@ -18,8 +18,22 @@ function hasPropertyObject(obj) {
   return Object.keys(obj).length === 0;
 }
 
-console.log(hasPropertyObject({})); //Expected true;
+// console.log(hasPropertyObject({})); //Expected true;
 
 let bar = { foo: '1' };
-console.log(Object.keys(bar).length); //Expedted 1;
-console.log(hasPropertyObject(bar)); //Expected false;
+// console.log(Object.keys(bar).length); //Expedted 1;
+// console.log(hasPropertyObject(bar)); //Expected false;
+
+//3. Object.getOwnPropertyNames() method
+// The Object.getOwnPropertyNames() method returns an array of all the properties of a given object.
+// This method considers non-enumerable properties as well, whiule Object.keys() considers enumerable properties only.
+
+function getPropertyObject(obj) {
+  return Object.getOwnPropertyNames(obj).length === 0;
+}
+
+// console.log(getPropertyObject({})); //Expected true;
+
+const yar = { foo: '1' };
+// console.log(Object.getOwnPropertyNames(yar).length); //Expected 1;
+// console.log(getPropertyObject(yar)); //Expedted false;
