@@ -1,12 +1,12 @@
 //1. Pre - ES5 Way
-function isEmptyObject(obj) {
-  for (let property in obj) {
-    if (obj.hasOwnProperty(property)) {
-      return false;
-    }
-  }
-  return true;
-}
+// function isEmptyObject(obj) {
+//   for (let property in obj) {
+//     if (obj.hasOwnProperty(property)) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
 
 // console.log(isEmptyObject({})); //Expected true;
 // console.log(isEmptyObject({ foo: '1' })); //Expected false;
@@ -63,3 +63,9 @@ const tar = { foo: '1' };
 // console.log(Object.entries(tar)); // Expected [['foo', '1']];
 // console.log(Object.entries(tar).length); //Expected 1;
 // console.log(hasEntriesObject(tar)); //Expected false;
+
+// 6. The jQuery Way
+// If you’re already using the jQuery library in your project, it’s really easy for you to check if an object is empty, since the jQuery library already provides the isEmptyObject method, which allows you to check if an object is empty.
+
+// jQuery.isEmptyObject({}); //Expected true;
+// jQuery.isEmptyObject({ foo: '1' }); //Expected false;
