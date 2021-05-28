@@ -8,5 +8,6 @@ function isEmptyObject(obj) {
   return true;
 }
 
-// console.log(isEmptyObject({})); //Expected true;
-// console.log(isEmptyObject({ foo: '1' })); //Expected false;
+console.log(isEmptyObject({})); //Expected true;
+console.log(isEmptyObject({ foo: '1' })); //Expected false;
+
