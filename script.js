@@ -51,3 +51,15 @@ const par = { foo: 1 };
 // console.log(JSON.stringify(par)); //Expected {"foo":"1"};
 // console.log(stringifyObject(par)); //Expected false;
 
+// 5. Object.entries() method
+// The Object.entries() method returns an array of arrays with each element being an array of key-value pairs of an object's property.
+
+function hasEntriesObject(obj) {
+  return Object.entries(obj).length === 0;
+}
+
+// console.log(hasEntriesObject({})); //Expected true;
+const tar = { foo: '1' };
+// console.log(Object.entries(tar)); // Expected [['foo', '1']];
+// console.log(Object.entries(tar).length); //Expected 1;
+// console.log(hasEntriesObject(tar)); //Expected false;
