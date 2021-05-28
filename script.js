@@ -37,3 +37,17 @@ function getPropertyObject(obj) {
 const yar = { foo: '1' };
 // console.log(Object.getOwnPropertyNames(yar).length); //Expected 1;
 // console.log(getPropertyObject(yar)); //Expedted false;
+
+// 4. JSON.stringify method
+// JSON.stringify method is used to convert a JavaScript object to a JSON string.
+
+function stringifyObject(obj) {
+  return JSON.stringify(obj) === '{}';
+}
+
+// console.log(stringifyObject({})); //Expected true;
+
+const par = { foo: 1 };
+// console.log(JSON.stringify(par)); //Expected {"foo":"1"};
+// console.log(stringifyObject(par)); //Expected false;
+
